@@ -1,15 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-//import { NativeRouter, Route, Link } from "react-router-native";
-import { createStackNavigator } from '@react-navigation/stack';
+import Home from './screens/home';
+import { AppLoading } from 'expo';
 import Header from './components/header';
+import Navigator from './routes/homestack';
+
+
+//import { StatusBar } from 'expo-status-bar';
+//import { NativeRouter, Route, Link } from "react-router-native";
+//import { createStackNavigator } from '@react-navigation/stack';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Budget Buddies!</Text>
-    </View>
+    <Navigator />
   );
 }
 
