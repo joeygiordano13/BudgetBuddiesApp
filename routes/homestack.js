@@ -4,6 +4,7 @@ import Home from '../screens/home';
 import Budgets from '../screens/budgets';
 import Leaderboard from '../screens/leaderboard';
 import Settings from '../screens/settings';
+import Calendars from '../screens/calendar';
 
 const screens = {
     Home: {
@@ -15,6 +16,9 @@ const screens = {
     Leaderboard: {
         screen: Leaderboard
     }, 
+    Calendar: {
+        screen: Calendars
+    },
     Settings: {
         screen: Settings
     }

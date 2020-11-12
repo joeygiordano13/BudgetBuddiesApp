@@ -14,6 +14,10 @@ export default function Home({ navigation }) {
           onPress={() => navigation.navigate('Leaderboard')}
         />
         <Button
+          title="Calendar"
+          onPress={() => navigation.navigate('Calendar')}
+        />
+        <Button
           title="Settings"
           onPress={() => navigation.navigate('Settings')}
         />
