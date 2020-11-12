@@ -7,7 +7,7 @@ import FriendSearchBar from '../components/friendsearchbar'
 
 export default function Leaderboard() {
     return (
-        <View style={styles.container}>
+        <View style={styles.bottom}>
             <FriendSearchBar/>
         </View>
     );
@@ -16,5 +16,10 @@ export default function Leaderboard() {
 const styles = StyleSheet.create({
     container: {
         padding: 20,
+    },
+    bottom: {  
+        flex: 1,
+        justifyContent: 'flex-end',
+        marginBottom: 30
     },
 });

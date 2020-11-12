@@ -28,6 +28,7 @@
     "web": {
       "favicon": "./assets/logo192.png"
     },
-    "description": "Budget Buddies is an educational platform for budgeting."
+    "description": "Budget Buddies is an educational platform for budgeting.",
+    "githubUrl": "https://github.com/joeygiordano13/BudgetBuddiesApp"
   }
 }
