@@ -1,19 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 //import { render } from 'react-dom';
 import { StyleSheet, View, Text } from 'react-native';
-import { SearchBar } from 'react-native-elements';
+//import { SearchBar } from 'react-native-elements';
+import FriendSearchBar from '../components/friendsearchbar'
 
 
 export default function Leaderboard() {
-
     return (
         <View style={styles.container}>
-            <Text>Sample text</Text>
-            <SearchBar
-                placeholder="Find a new Budget Buddy!..."
-                //onChangeText={this.updateSearch}
-                //value={search}
-            />
+            <FriendSearchBar/>
         </View>
     );
 }
