@@ -1,5 +1,4 @@
 import React from 'react';
-import { createAppContainer } from 'react-navigation';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
 import Icon from "react-native-vector-icons/FontAwesome";
 
@@ -9,14 +8,6 @@ import Leaderboard from '../screens/leaderboard';
 import Calendars from '../screens/calendar';
 import Settings from '../screens/settings';
 
-
-export default class MainAppContainer extends React.Component {
-    render() {
-        return (
-            <MainAppContainer />
-        );
-    }
-}
 
 class HomeScreen extends React.Component {
   render() {
@@ -74,7 +65,6 @@ const bottomTabNavigator = createBottomTabNavigator(
         tabBarIcon: ({ tintColor }) => (
           <Icon name="line-chart" size={25} color={tintColor} />
         )
-        // try suitcase icon.
       }
     },
     Leaderboard: {
@@ -111,4 +101,6 @@ const bottomTabNavigator = createBottomTabNavigator(
   }
 );
 
-const MainAppContainer = createAppContainer(bottomTabNavigator);
+const HomeTabs = createAppContainer(bottomTabNavigator);
+
+export default HomeTabs;

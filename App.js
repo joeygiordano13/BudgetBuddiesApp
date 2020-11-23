@@ -1,13 +1,20 @@
 import React from 'react';
+import { createAppContainer } from 'react-navigation';
+import LoginScreen from './src/screens/loginScreen';
+import { createStackNavigator } from 'react-navigation-stack';
+import HomeTabs from './routes/BottomTabNavigator';
 
-//import Navigator from './routes/homestack';
-//import { createStackNavigator } from '@react-navigation/stack';
+const Stack = createStackNavigator();
+
 export default class App extends React.Component {
     render() {
-      return (
-        <LoginScreen/>
-      );
+        return (
+          <Stack.Navigator>
+            <Stack.Screen name="Login" component={LoginScreen} />
+            <Stack.Screen name="Home" component={HomeTabs} />
+          </Stack.Navigator>
+        );
     }
-  }
+}
 
 export default App;
